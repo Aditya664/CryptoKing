@@ -151,9 +151,28 @@
         android:inputType="textImeMultiLine"
         tools:layout_editor_absoluteX="35dp"
         tools:layout_editor_absoluteY="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
     
     <Button
-        android:layout_width=""
-        android:layout_height=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/decrypt"
+        android:layout_weight="1"
+        android:text="Decrypt"
+        android:layout_marginTop="8dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/encrypt"
+        android:layout_weight="1"
+        android:text="Encrypt"
+        android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
 
 </LinearLayout>
