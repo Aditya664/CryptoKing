@@ -162,6 +162,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/decrypt"
+        android:layout_marginRight="2dp"
         android:layout_weight="1"
         android:text="Decrypt"
         android:layout_marginTop="8dp"/>
@@ -169,6 +170,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/encrypt"
+        android:layout_marginLeft="2dp"
         android:layout_weight="1"
         android:text="Encrypt"
         android:layout_marginTop="8dp"/>
