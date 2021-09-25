@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/title"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:layout_gravity="left"
+                android:text="Input text"
+                android:textSize="18sp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/char_count"
+                android:layout_marginBottom="2dp"
+                android:layout_gravity="left"
+                android:text="0"
+                android:textSize="14sp"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginRight="7dp"
+            android:id="@+id/delete_normal"
+            android:text="Delete"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/copy_normal"
+            android:text="Copy"/>
+        
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/normaltext"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:ems="10"
+        android:gravity="top|left"
+        android:inputType="textImeMultiLine"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="5dp"/>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextView"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="left"
+        android:text="Secreate Key (8 char)"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/Key"
+        android:background="#ffffff"
+        android:ems="10"
+        android:inputType="textImeMultiLine"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="5dp"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/title2"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Encrypted text"
+                android:textSize="18sp"
+                android:gravity="left"/>
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/char_count2"
+                android:gravity="left"
+                android:layout_marginBottom="2dp"
+                android:textColor="@color/white"
+                android:text="0"
+                android:textSize="14sp"/>
+            
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/delete_ci"
+            android:text="Delete"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/copy_ci"
+            android:layout_margin="7dp"
+            android:text="Copy"/>
+    </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/citext"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:ems="10"
+        android:gravity="top|left"
+        android:inputType="textImeMultiLine"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="5dp"/>
+    
+    <Button
+        android:layout_width=""
+        android:layout_height=""
+
+</LinearLayout>
